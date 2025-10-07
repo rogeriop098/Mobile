@@ -1,0 +1,18 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView android:id="@+id/iconeCategoria" android:layout_width="24dp" android:layout_height="24dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:id="@+id/nomeItem" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/iconeCategoria" app:layout_constraintEnd_toStartOf="@id/quantidadeItem" app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:id="@+id/quantidadeItem" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/checkComprado" app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox android:id="@+id/checkComprado" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/botaoEditarItem" app:layout_constraintTop_toTopOf="parent" />
+
+    <Button android:id="@+id/botaoEditarItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Editar" app:layout_constraintEnd_toStartOf="@id/botaoExcluirItem" app:layout_constraintTop_toTopOf="parent" />
+
+    <Button android:id="@+id/botaoExcluirItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Excluir" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

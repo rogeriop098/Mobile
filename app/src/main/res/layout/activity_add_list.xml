@@ -1,0 +1,16 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tituloLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/titulo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Título da Lista" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView android:id="@+id/imagemSelecionada" android:layout_width="100dp" android:layout_height="100dp" app:layout_constraintTop_toBottomOf="@id/tituloLayout" app:layout_constraintStart_toStartOf="parent" />
+
+    <Button android:id="@+id/botaoSelecionarImagem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selecionar Imagem" app:layout_constraintTop_toBottomOf="@id/imagemSelecionada" app:layout_constraintStart_toStartOf="parent" />
+
+    <Button android:id="@+id/botaoSalvar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Salvar" app:layout_constraintTop_toBottomOf="@id/botaoSelecionarImagem" />
+</androidx.constraintlayout.widget.ConstraintLayout>

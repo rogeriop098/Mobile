@@ -1,0 +1,24 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/nomeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/nome" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nome do Item" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/quantidadeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/nomeLayout">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/quantidade" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Quantidade" android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/unidadeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/quantidadeLayout">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/unidade" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Unidade (ex.: un, kg)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/categoriaLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/unidadeLayout">
+        <AutoCompleteTextView android:id="@+id/categoria" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Categoria (ex.: fruta, carne)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:id="@+id/botaoSalvarItem" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Salvar" app:layout_constraintTop_toBottomOf="@id/categoriaLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

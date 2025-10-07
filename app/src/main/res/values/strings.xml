@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ListaDeComprasApp</string>
+    <string name="titulo_lista">Suas Listas</string>
+    <string name="detalhes_lista">Detalhes da Lista</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_confirmar_senha">Confirmar Senha</string>
+    <string name="botao_criar">Criar</string>
+    <string name="hint_titulo_lista">Título da Lista</string>
+    <string name="botao_selecionar_imagem">Selecionar Imagem</string>
+    <string name="botao_salvar">Salvar</string>
+    <string name="hint_nome_item">Nome do Item</string>
+    <string name="hint_quantidade">Quantidade</string>
+    <string name="hint_unidade">Unidade (ex.: un, kg)</string>
+    <string name="hint_categoria">Categoria (ex.: fruta, carne)</string>
+</resources>
